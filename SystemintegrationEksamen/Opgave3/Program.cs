@@ -23,7 +23,7 @@ class Program
         
         string jsonRequest = File.ReadAllText("/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/SystemintegrationEksamen/Opgave3/Request.json");
         dynamic request = JsonConvert.DeserializeObject(jsonRequest);
-        ushort medlemsNummer = request.data.medlemsNummer;
+        ushort medlemsNummer = request.Body.MedlemsNummer;
         
         
         usersDB.membershipStatusReply(medlemsNummer);

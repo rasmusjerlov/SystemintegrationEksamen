@@ -2,7 +2,7 @@
 {
   "CommandType": "CheckMembership",
   "Body": {
-    "MedlemsNummer": 12345
+    "MedlemsNummer": 3
   }
 }
 
