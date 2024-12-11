@@ -42,7 +42,7 @@ public class UsersDB
     {
         var reply = new
         {
-            data = new
+            Body = new
             {
                 isMember = checkMembership(medlemsNummer)
             }

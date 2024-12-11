@@ -1,6 +1,6 @@
 
 {
-  "CommandType": "CheckMembership",
+  "CommandType": "checkMembership",
   "Body": {
     "MedlemsNummer": 3
   }
