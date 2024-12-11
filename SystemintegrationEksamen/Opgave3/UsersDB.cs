@@ -24,7 +24,7 @@ public class UsersDB
         }
     }
 
-    public bool checkMembershipStatus(ushort medlemsNummer)
+    public bool checkMembership(ushort medlemsNummer)
     {
         foreach (User u in Users)
         {
@@ -38,13 +38,13 @@ public class UsersDB
         return false;
     }
 
-    public void sendReply(ushort medlemsNummer)
+    public void membershipStatusReply(ushort medlemsNummer)
     {
         var reply = new
         {
             data = new
             {
-                isMember = checkMembershipStatus(medlemsNummer)
+                isMember = checkMembership(medlemsNummer)
             }
         };
         string jsonReply = JsonConvert.SerializeObject(reply);

@@ -26,7 +26,7 @@ class Program
         ushort medlemsNummer = request.data.medlemsNummer;
         
         
-        usersDB.sendReply(medlemsNummer);
+        usersDB.membershipStatusReply(medlemsNummer);
 
         string jsonReply =
             File.ReadAllText(
