@@ -8,6 +8,11 @@ class Program
 {
     static void Main(string[] args)
     {
+        Opgave3();
+    }
+
+    static void Opgave3()
+    {
         UsersDB usersDB = new UsersDB();
         User u1 = new User(1, "John", "Doe");
         User u2 = new User(2, "Jane", "Doe");
@@ -40,5 +45,10 @@ class Program
         {
             Console.WriteLine("Unknown command type.");
         }
+    }
+
+    static void opgave7()
+    {
+        
     }
 }
