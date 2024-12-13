@@ -7,9 +7,6 @@ public class User
     private string Fornavn { get; set; }
     private string Efternavn { get; set; }
     
-    //Opgave 7 tilføjelse
-    
-    private string datoBrev { get; set; }
 
     public User(ushort medlemsNummer, string fornavn, string efternavn)
     {
@@ -27,9 +24,5 @@ public class User
     {
         return MedlemsNummer;
     }
-
-    public string getdatoBrev()
-    {
-        return datoBrev;
-    }
+    
 }

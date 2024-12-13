@@ -23,7 +23,7 @@ class Program
 
         string jsonRequest =
             File.ReadAllText(
-                "/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/SystemintegrationEksamen/Opgave3/Request.json");
+                "/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/Opgave3/Opgave3/Request.json");
         dynamic request = JsonConvert.DeserializeObject(jsonRequest);
         string commandType = request.CommandType;
         ushort medlemsNummer = request.Body.MedlemsNummer;
@@ -35,7 +35,7 @@ class Program
 
             string jsonReply =
                 File.ReadAllText(
-                    "/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/SystemintegrationEksamen/Opgave3/Reply.json");
+                    "/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/Opgave3/Opgave3/Reply.json");
             dynamic reply = JsonConvert.DeserializeObject(jsonReply);
             bool isMember = reply.Body.isMember;
             Console.WriteLine($"User with membership number {medlemsNummer} is a member: {isMember}");

@@ -20,7 +20,7 @@ public class UsersDB
         }
         else
         {
-            Console.WriteLine("User already exists");
+            Console.WriteLine("Bruger findes allerede.");
         }
     }
 
@@ -48,6 +48,6 @@ public class UsersDB
             }
         };
         string jsonReply = JsonConvert.SerializeObject(reply);
-        File.WriteAllText("/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/SystemintegrationEksamen/Opgave3/Reply.json", jsonReply);
+        File.WriteAllText("/Users/rasmusjerlov/Library/CloudStorage/OneDrive-EFIF/Datamatiker/Projects/Rider/SystemintegrationEksamen/Opgave3/Opgave3/Reply.json", jsonReply);
     }
 }
